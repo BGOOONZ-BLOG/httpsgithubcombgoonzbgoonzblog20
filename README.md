@@ -498,6 +498,17 @@ bryan@LAPTOP-9LGJ3JGS:/c/MY-WEB-DEV/BLOG____2.0/BLOG_2.0/src$
 <details>
   <summary>ActionLink!</summary>
 
+#Components
+
+<details>
+  <summary><h1>Click to see React Components (src folder)!</h1></summary>
+  
+  
+
+
+<details>
+  <summary>ActionLink!</summary>
+  
   ##ActionLink
 ```js
 import React from 'react';
@@ -508,9 +519,8 @@ import Icon from './Icon';
 
 export default class ActionLink extends React.Component {
 render() {
-let action = \_.get(this.props, 'action', null);
+let action = _.get(this.props, 'action', null);
 return (
-
 <Link
 to={withPrefix(_.get(action, 'url', null))}
 {...(_.get(action, 'new_window', null) ? { target: '\_blank' } : null)}
@@ -582,7 +592,7 @@ export default class CtaButtons extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## DocsMenu
 
 ---
@@ -661,7 +671,7 @@ export default class DocsMenu extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## DocsSubmenu
 
 ---
@@ -698,7 +708,7 @@ export default class DocsSubmenu extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## Footer
 
 ---
@@ -744,7 +754,7 @@ export default class Footer extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ##  Header
 
 ---
@@ -878,7 +888,7 @@ export default class Header extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## Icon
 
 ---
@@ -925,7 +935,7 @@ export default class Icon extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## Body
 
 ---
@@ -995,7 +1005,7 @@ export default class Body extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## SectionContent
 
 ---
@@ -1048,7 +1058,7 @@ export default class SectionContent extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## SectionCta
 
 ---
@@ -1092,7 +1102,7 @@ export default class SectionCta extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## SectionDocs
 
 ---
@@ -1163,7 +1173,7 @@ export default class SectionDocs extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## SectionGrid
 
 ---
@@ -1242,7 +1252,7 @@ export default class SectionGrid extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## SectionHero
 
 ---
@@ -1285,7 +1295,7 @@ export default class SectionHero extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## Submenu
 
 ---
@@ -1327,7 +1337,7 @@ export default class Submenu extends React.Component {
 
 <details>
   <summary>Click to expand!</summary>
-
+  
   ## Index.js
 
 ---
