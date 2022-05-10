@@ -1,5 +1,6 @@
 /* PrismJS 1.16.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=toolbar+copy-to-clipboard */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript&plugins=toolbar+copy-to-clipboard
+*/
 var _self = 'undefined' != typeof window ? window : 'undefined' != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? self : {},
     Prism = (function (g) {
         var c = /\blang(?:uage)?-([\w-]+)\b/i,
@@ -103,7 +104,12 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                         (e.className = e.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r),
                         e.parentNode &&
                             ((i = e.parentNode), /pre/i.test(i.nodeName) && (i.className = i.className.replace(c, '').replace(/\s+/g, ' ') + ' language-' + r));
-                    var l = { element: e, language: r, grammar: t, code: e.textContent },
+                    var l = {
+                            element: e,
+                            language: r,
+                            grammar: t,
+                            code: e.textContent
+                        },
                         o = function (e) {
                             (l.highlightedCode = e),
                                 C.hooks.run('before-insert', l),
@@ -306,10 +312,7 @@ var _self = 'undefined' != typeof window ? window : 'undefined' != typeof Worker
                 }
             },
             punctuation: /\/?>/,
-            'attr-name': {
-                pattern: /[^\s>\/]+/,
-                inside: { namespace: /^[^\s>\/:]+:/ }
-            }
+            'attr-name': { pattern: /[^\s>\/]+/, inside: { namespace: /^[^\s>\/:]+:/ } }
         }
     },
     entity: /&#?[\da-z]{1,8};/i
@@ -390,10 +393,7 @@ Prism.languages.clike = {
         { pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/, lookbehind: !0 },
         { pattern: /(^|[^\\:])\/\/.*/, lookbehind: !0, greedy: !0 }
     ],
-    string: {
-        pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
-        greedy: !0
-    },
+    string: { pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/, greedy: !0 },
     'class-name': {
         pattern: /((?:\b(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[\w.\\]+/i,
         lookbehind: !0,
@@ -470,10 +470,7 @@ Prism.languages.clike = {
                 interpolation: {
                     pattern: /\${(?:[^{}]|{(?:[^{}]|{[^}]*})*})+}/,
                     inside: {
-                        'interpolation-punctuation': {
-                            pattern: /^\${|}$/,
-                            alias: 'punctuation'
-                        },
+                        'interpolation-punctuation': { pattern: /^\${|}$/, alias: 'punctuation' },
                         rest: Prism.languages.javascript
                     }
                 },
