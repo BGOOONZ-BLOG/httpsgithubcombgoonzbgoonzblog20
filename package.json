@@ -48,7 +48,7 @@
         "react-html-parser": "2.0.2",
         "react-instantsearch": "6.12.0",
         "react-instantsearch-dom": "6.12.0",
-        "react-player": "2.9.0",
+        "react-player": "2.10.1",
         "react-script-tag": "1.1.2",
         "rehype-react": "3.0.2",
         "sprintf-js": "1.1.2"
