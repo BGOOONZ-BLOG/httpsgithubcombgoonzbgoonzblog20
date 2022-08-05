@@ -319,7 +319,8 @@ window.Element &&
         };
     });
 
-/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/gumshoe */
+/*! gumshoejs v5.1.1 | (c) 2019 Chris Ferdinandi | MIT License |
+ * http://github.com/cferdinandi/gumshoe */
 Element.prototype.closest ||
     (Element.prototype.matches || (Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector),
     (Element.prototype.closest = function (t) {
@@ -544,11 +545,7 @@ Element.prototype.closest ||
                 r.o(t, e) || Object.defineProperty(t, e, { enumerable: !0, get: n });
             }),
             (r.r = function (t) {
-                'undefined' != typeof Symbol &&
-                    Symbol.toStringTag &&
-                    Object.defineProperty(t, Symbol.toStringTag, {
-                        value: 'Module'
-                    }),
+                'undefined' != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: 'Module' }),
                     Object.defineProperty(t, '__esModule', { value: !0 });
             }),
             (r.t = function (e, t) {

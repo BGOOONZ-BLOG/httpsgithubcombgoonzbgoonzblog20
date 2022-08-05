@@ -172,12 +172,7 @@ window.onGatsbyInitialClientRender = function () {
 
     function createLinksForHeaderElements(elements) {
         let result = [];
-        let stack = [
-            {
-                level: 0,
-                children: result
-            }
-        ];
+        let stack = [{ level: 0, children: result }];
         let re = /^h(\d)$/;
         for (let i = 0; i < elements.length; i++) {
             let element = elements[i];
